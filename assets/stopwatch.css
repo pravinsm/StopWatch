@@ -4,7 +4,9 @@ padding:0;
 background: black;
 text-align: center;
 }
-
+button{
+  outline: none;
+}
 .btn-group button {
   width:50%;
   background-color: #4CAF50; 
