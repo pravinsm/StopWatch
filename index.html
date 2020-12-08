@@ -2,36 +2,10 @@
 <html>
 <head>
     <meta charset='utf-8'>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name = "apple-mobile-web-app-capable" content = "yes" /> 
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-
     <title>Stopwatch/Timer</title>
-    
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="stylesheet" href="assets/stopwatch.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <script type="text/javascript" src = "assets/jquery-1.4.min.js"></script>
-		<script src = "assets/jquery.mousewheel.js"></script>
-		
-		<!-- iosSlider plugin -->
-		<script src = "assets/jquery.iosslider-vertical.js"></script>
-		
-		<script type="text/javascript">
-			$(document).ready(function() {
-			
-				$('.iosslider-vertical').iosSliderVertical({
-					scrollbarMargin: 0,
-					scrollbarWidth: 12,
-					scrollbarBorderRadius: 0,
-					scrollbarContainer: '.scrollbar',
-					snapToChildren: true,
-					infiniteSlider: true,
-					desktopClickDrag: true
-				});
-				
-			});
-		</script>
 </head>
 <body>
   <div class="btn-group">
@@ -40,56 +14,10 @@
   </div>
   <div class="container_timer" id="cont_timer">
     <div class="time" id="timer_set">
-    <!-- <div> -->
-      <div style="display: flex;justify-content: space-between;width: 150px;">
-
-        <div style="display:flex">
-  
-          <div class = 'iosslider-vertical'>
-        
-            <div class = 'slider' id= 'hour_2'></div>
-          
-          </div>
-          <div style="position: relative;">
-  
-            <p id="tag">hrs</p>
-  
-          </div>
-          
-        </div>
-        
-        <div style="display:flex">
-  
-          <div class = 'iosslider-vertical'>
-        
-            <div class = 'slider' id= 'minutes_2'></div>
-          
-          </div>
-          <div style="position: relative;">
-  
-            <p id="tag">min</p>
-  
-          </div>
-          
-        </div>
-  
-        <div style="display:flex">
-  
-          <div class = 'iosslider-vertical'>
-        
-            <div class = 'slider' id= 'seconds_2'></div>
-          
-          </div>
-          <div style="position: relative;">
-  
-            <p id="tag">sec</p>
-  
-          </div>
-          
-        </div>
-      </div>
+      <select id="hours"></select><p style="color:aqua;padding-right:10px;font-size:12px">hrs</p>
+      <select id="minutes"></select><p style="color:aqua;padding-right:10px;font-size:12px">min</p>
+      <select id="seconds"></select><p style="color:aqua;padding-right:10px;font-size:12px">sec</p>
     </div>
-
     <div class="time" id="timer"></div>
     <button onclick="timer_cd()" id="start" class="btn">Start</button>
     <div class= "btn1">
@@ -113,10 +41,9 @@
     <p id="cpryt">
       <span><a href="mailto:pravinsm10@gmail.com"><i class="fa fa-envelope" style="font-size:18px;"></i></a></span>&nbsp;
       <span><a href="https://github.com/pravinsm"><i class="fa fa-github" style="font-size:18px;"></i></a></span>&nbsp;
-      <span><a href="www.linkedin.com/in/pravin-s-m-128610165"><i class="fa fa-linkedin-square" style="font-size:18px;"></i></a></span>
+      <span><a href="https://www.linkedin.com/in/pravin-s-m-128610165"><i class="fa fa-linkedin-square" style="font-size:18px;"></i></a></span>
     </p>
   </div>
-
 <script src="assets/stopwatch.js"></script>  
 <script src="assets/timer.js"></script>
 </body>
